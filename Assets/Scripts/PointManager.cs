@@ -8,6 +8,8 @@ public class PointManager : MonoBehaviour
 
     public int WheatScore;
     public int MilkScore;
+    public int EggScore;
+    public int AppleScore;
 
     void Awake()
     {
@@ -31,12 +33,31 @@ public class PointManager : MonoBehaviour
         MilkScore += giveMilk;
         TextManager.obj.UpdateOnScreen();
     }
-    public void TakeScoreMilk(int giveMilk)
+    public void TakeScoreMilk(int priceToUnlock)
     {
-        MilkScore += giveMilk;
+        MilkScore += priceToUnlock;
         TextManager.obj.UpdateOnScreen();
     }
-
+    public void AddScoreEggs(int giveEggs)
+    {
+        EggScore += giveEggs;
+        TextManager.obj.UpdateOnScreen();
+    }
+    public void TakeScoreEggs(int priceToUnlock)
+    {
+        EggScore += priceToUnlock;
+        TextManager.obj.UpdateOnScreen();
+    }
+    public void AddScoreApples(int giveApples)
+    {
+        AppleScore += giveApples;
+        TextManager.obj.UpdateOnScreen();
+    }
+    public void TakeScoreApples(int priceToUnlock)
+    {
+        AppleScore += priceToUnlock;
+        TextManager.obj.UpdateOnScreen();
+    }
     void OnDestroy()
     {
         obj = null;

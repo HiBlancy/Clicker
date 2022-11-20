@@ -9,6 +9,9 @@ public class TextManager : MonoBehaviour
 
     [SerializeField] Text wheatOnScreen;
     [SerializeField] Text milkOnScreen;
+    [SerializeField] Text eggsOnScreen;
+    [SerializeField] Text applesOnScreen;
+
 
     void Awake()
     {
@@ -19,6 +22,8 @@ public class TextManager : MonoBehaviour
     {
         wheatOnScreen.text = "" + PointManager.obj.WheatScore;
         milkOnScreen.text = "" + PointManager.obj.MilkScore;
+        eggsOnScreen.text = "" + PointManager.obj.EggScore;
+        applesOnScreen.text = "" + PointManager.obj.AppleScore;
     }
 
     void OnDestroy()
