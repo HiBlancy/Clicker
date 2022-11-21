@@ -10,6 +10,7 @@ public class PointManager : MonoBehaviour
     public int MilkScore;
     public int EggScore;
     public int AppleScore;
+    public int CakeScore;
 
     void Awake()
     {
@@ -56,6 +57,12 @@ public class PointManager : MonoBehaviour
     public void TakeScoreApples(int priceToUnlock)
     {
         AppleScore += priceToUnlock;
+        TextManager.obj.UpdateOnScreen();
+    }
+
+    public void AddScoreCakes(int giveCakes)
+    {
+        CakeScore += giveCakes;
         TextManager.obj.UpdateOnScreen();
     }
     void OnDestroy()

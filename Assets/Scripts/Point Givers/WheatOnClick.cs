@@ -5,11 +5,16 @@ using UnityEngine;
 public class WheatOnClick : MonoBehaviour
 {
     public static WheatOnClick obj;
-    public int giveWheat = 1;
+    public static int giveWheat;
 
     void Awake()
     {
         obj = this;
+    }
+
+    void Start()
+    {
+        giveWheat = 2;
     }
 
     public void ClickOnScreenWheat()

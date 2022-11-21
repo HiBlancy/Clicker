@@ -11,6 +11,7 @@ public class TextManager : MonoBehaviour
     [SerializeField] Text milkOnScreen;
     [SerializeField] Text eggsOnScreen;
     [SerializeField] Text applesOnScreen;
+    [SerializeField] Text cakesOnScreen;
 
 
     void Awake()
@@ -24,6 +25,7 @@ public class TextManager : MonoBehaviour
         milkOnScreen.text = "" + PointManager.obj.MilkScore;
         eggsOnScreen.text = "" + PointManager.obj.EggScore;
         applesOnScreen.text = "" + PointManager.obj.AppleScore;
+        cakesOnScreen.text = "" + PointManager.obj.CakeScore;
     }
 
     void OnDestroy()
