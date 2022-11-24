@@ -31,7 +31,7 @@ public class MilkUpgrade : MonoBehaviour
             PointManager.obj.EggScore -= upgradeEggs;
             PointManager.obj.AppleScore -= upgradeApples;
 
-            WheatOnClick.giveWheat += 4;
+            CowGivingPoints.obj.giveMilkOnClick += 4;
 
             upgradeWheat += 14;
             upgradeMilk += 41;

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UnlockCow : MonoBehaviour
 {
     public bool isLocked;
-    int priceToUnlock = -10;
+    int priceToUnlock = -15;
 
     [SerializeField] GameObject cow;
 
@@ -18,7 +18,7 @@ public class UnlockCow : MonoBehaviour
 
     public void CowLocked()
     {
-        if (PointManager.obj.WheatScore >= 10)
+        if (PointManager.obj.WheatScore >= 15)
         {
             PointManager.obj.TakeScoreWheat(priceToUnlock);
             isLocked = false;

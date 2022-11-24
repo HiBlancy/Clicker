@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class AppleTreeUnlock : MonoBehaviour
 {
     public bool isLocked;
-    int priceToUnlockWheat = -320;
+    int priceToUnlockWheat = -650;
     int priceToUnlockMilk = -400;
-    int priceToUnlockEggs = -650;
+    int priceToUnlockEggs = -320;
 
     [SerializeField] GameObject appleTree;
 
@@ -18,9 +18,9 @@ public class AppleTreeUnlock : MonoBehaviour
         appleTree = GameObject.FindGameObjectWithTag("Tree");
     }
 
-    public void ChikenLocked()
+    public void TreeLocked()
     {
-        if (PointManager.obj.WheatScore >= 320 & PointManager.obj.MilkScore >= 400 & PointManager.obj.EggScore >= 650)
+        if (PointManager.obj.WheatScore >= 650 & PointManager.obj.MilkScore >= 400 & PointManager.obj.EggScore >= 320)
         {
             PointManager.obj.TakeScoreWheat(priceToUnlockWheat);
             PointManager.obj.TakeScoreMilk(priceToUnlockMilk);

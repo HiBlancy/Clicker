@@ -32,7 +32,7 @@ public class EggUpgrade : MonoBehaviour
             PointManager.obj.EggScore -= upgradeEggs;
             PointManager.obj.AppleScore -= upgradeApples;
 
-            WheatOnClick.giveWheat += 4;
+            ChikenGivingPoints.obj.giveEggsOnClick += 5;
 
             upgradeWheat += 20;
             upgradeMilk += 51;

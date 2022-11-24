@@ -19,7 +19,7 @@ public class ChikenUnlock : MonoBehaviour
 
     public void ChikenLocked()
     {
-        if (PointManager.obj.WheatScore >= 10 & PointManager.obj.MilkScore >= 25)
+        if (PointManager.obj.WheatScore >= 100 & PointManager.obj.MilkScore >= 85)
         {
             PointManager.obj.TakeScoreWheat(priceToUnlockWheat);
             PointManager.obj.TakeScoreMilk(priceToUnlockMilk);
